@@ -1,0 +1,20 @@
+# List of lists
+list_of_lists = [["Shilpa", "Bob", "Charlie"], ["David", "Eve", "Frank"], ["Grace", "Helen", "Ivy"]]
+
+# Name to search for
+name_to_find = "Shilpa"
+
+# Initialize a variable to store the result
+found = False
+
+# Nested loop to search for the name
+for sublist in list_of_lists:
+    if name_to_find in sublist:
+        found = True
+        break  # Stop searching once the name is found
+
+# Check if the name was found
+if found:
+    print(f"{name_to_find} was found in the list of lists.")
+else:
+    print(f"{name_to_find} was not found in the list of lists.")
